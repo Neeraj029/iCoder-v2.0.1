@@ -3,7 +3,7 @@ Making this project to master django and become fullstack web developer
 
 # How to run ?
 1. Clone the repo
-- `git clone https://github.com/Neerajsamshette/iCoder.git`
+- `git clone https://github.com/Neerajsamshette/iCoder-v2.0.1.git`
 
 2. cd to the folder
 - `cd iCoder`
