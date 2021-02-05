@@ -6,7 +6,7 @@ Making this project to master django and become fullstack web developer
 - `git clone https://github.com/Neerajsamshette/iCoder-v2.0.1.git`
 
 2. cd to the folder
-- `cd iCoder`
+- `cd iCoder-v2.0.1`
 
 3. install all the dependencies using pip
 -  `pip install -r requirements.txt`
