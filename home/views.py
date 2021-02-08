@@ -9,4 +9,11 @@ def about(request):
     return render(request, 'home/about.html')
 
 def contact(request):
-    return render(request, 'home/contact.html')
+    if request.method == 'POST':
+        name = request.POST['name']
+        email = request.POST['email']
+        phone_number = request.POST['phoneNumber']
+        issue = request.POST['issue']
+    CONTACT_SUBMITTED = True
+
+    return render(request, 'home/contact.html', {"contact_status" : CONTACT_SUBMITTED})
