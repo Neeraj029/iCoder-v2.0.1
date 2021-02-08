@@ -8,37 +8,54 @@
 {% block cssUrl %}{% static 'home/style.css' %}{% endblock cssUrl%}
 
 {% block body %}
-    <div id="contact-form" class="container width-2">
-        {% if contact_status %}
+    {% if contact_status == False %}
+        <div id="contact-form" class="container width-2">
+            <form class="my-3 contact-form" method="post">
+                {% csrf_token %}
+                <h2 style = "color: #335eea; margin:20px;" class="text-center">
+                Contact iCoder
+                </h2>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Name</label>
+                <input type="text" class="form-control" name="name" id="name" aria-describedby="name">
+              </div>
+                <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+                <div class="mb-3">
+                <label for="phoneNumber" class="form-label">Phone number</label>
+                <input type="phone" class="form-control" id="phoneNumber" name="phoneNumber" aria-describedby="mobileNumber">
+              </div>
+                <div class="mb-3">
+                <label for="issueDescription" class="form-label">Describe your issue please</label>
+                <div class="form-floating">
+                  <textarea class="form-control" name="issue" rows="5" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                  <label for="floatingTextarea2">Enter your issue</label>
+                </div>
 
-        <form class="my-3 contact-form" method="post">
-            {% csrf_token %}
-            <h2 style = "color: #335eea; margin:20px;" class="text-center">
-            Contact iCoder
-            </h2>
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Name</label>
-            <input type="text" class="form-control" name="name" id="name" aria-describedby="name">
-          </div>
-            <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-          </div>
-            <div class="mb-3">
-            <label for="phoneNumber" class="form-label">Phone number</label>
-            <input type="phone" class="form-control" id="phoneNumber" name="phoneNumber" aria-describedby="mobileNumber">
-          </div>
-            <div class="mb-3">
-            <label for="issueDescription" class="form-label">Describe your issue please</label>
-            <div class="form-floating">
-              <textarea class="form-control" name="issue" rows="5" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-              <label for="floatingTextarea2">Enter your issue</label>
-            </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
 
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-    </div>
+    {% elif contact_status %}
+        <div class="success-container" style="
+            background-color: #335eea;
+            color: white;
+            border-radius: 14px;
+            width: fit-content;
+            padding: 60px;
+            margin: 19vh auto;
+            ">
+
+            <h1 style="font-size: 80px">Thank</h1>
+            <h1 style="font-size: 80px"> You.</h1>
+            <hr>
+            <h4>We'll be in touch shortly!</h4>
+        </div>
+    {% endif %}
+
 
 {% endblock body %}
