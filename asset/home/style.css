@@ -4,6 +4,7 @@
 
 
 .welcome-banner {
+  background-color: #335eea;
   display: flex;
   flex-direction: row;
   align-items: center;

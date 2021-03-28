@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>delete this file</title>
+</head>
+<style>
+    .animation-btn:hover > #letsgo{
+        animation-name: moveon;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        transition: 0.3s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: both;
+    }
+
+    @keyframes moveon {
+        0%{
+            left: 0px;
+        }
+        40%{
+            left: 25px;
+        }
+        50%{
+            left: -5px;
+        }
+        60%{
+            left: 5px;
+        }
+        70%{
+            left: -5px;
+        }
+    }
+</style>
+<body>
+            <button class="animation-btn" style="
+
+            padding: 10px;
+            background-color: white;
+            color: #335eea;
+            border-radius: 10px;
+            border: transparent;
+            margin-top: 20px;
+            position: inherit;
+            justify-content: center;
+            align-items: center;
+            width: 150px;
+            display: flex;"
+            >Home <svg id="letsgo" style="margin-left: 10px;width: 30px;height: 30px;position: relative" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+</svg></button>
+</body>
+</html>

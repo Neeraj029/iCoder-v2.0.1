@@ -3,23 +3,66 @@
 
 {% block title %}iCoder - Future for coders{% endblock %}
 
-{% block cssUrl %}{% static 'home/style.css' %}{% endblock cssUrl %}
+{% block cssUrl %}{% static 'home/style.css' %}{% endblock cssUrl%}
 
 {% block active-home %}active{% endblock active-home %}
 
 {% block body %}
-    <div class="welcome-banner">
-        <div class="left">
-            <h3 style="font-weight: bold">Welcome to <span style = 'color: rgb(66, 66, 243)'>iCoder</span></h3>
-            <p><h5 style = "">Share your knowledgeable ideas
-            </h5></p>
-            <div class="buttons">
-                <button class = "signup-btn">Signup</button>
-                <button class = "other-btn">Learn more!</button>
-            </div>
-        </div>
-        <div class="right">
-                <img src="{% static 'images/img1.png' %}" alt="signup-banner">
+<div class="welcome-banner">
+    <div class="left">
+        <h3 style="font-weight: bold;font-family: 'Open Sans', sans-serif;">Welcome to <span
+                style='color: rgb(66, 66, 243)'>iCoder</span></h3>
+        <p>
+        <h5>Share your knowledgeable ideas
+        </h5>
+        </p>
+        <div class="buttons">
+            <button class="signup-btn">Signup</button>
+            <button class="other-btn" style="border-color: transparent">Learn more!</button>
         </div>
     </div>
+    <div class="right">
+        <img src="{% static 'images/img1.png' %}" alt="signup-banner">
+    </div>
+</div>
+<div class="blog-preview" style="margin-top: 200px">
+    <div class="container"
+        style="display: flex;flex-direction: column;justify-content: center!important;align-items: center;width: 100%;">
+        <h3 style="margin: 20px;">Popular Blog posts</h3>
+        <div class="cards" style="display: flex;">
+            <div class="card m-3">
+                <h5 class="card-header">Featured</h5>
+                <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card m-3">
+                <h5 class="card-header">Featured</h5>
+                <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card m-3">
+                <h5 class="card-header">Featured</h5>
+                <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div class="info">
+    <div class="info-left">
+        <h3>Why use iCoder ?</h3>
+    </div>
+    <div class="info-right"></div>
+</div>
 {% endblock body %}

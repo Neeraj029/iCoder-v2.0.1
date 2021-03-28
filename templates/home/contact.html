@@ -17,21 +17,21 @@
                 </h2>
               <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Name</label>
-                <input type="text" class="form-control" name="name" id="name" aria-describedby="name">
+                <input type="text" class="form-control" name="name" id="name" aria-describedby="name" required>
               </div>
                 <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" required>
                 <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
               </div>
                 <div class="mb-3">
                 <label for="phoneNumber" class="form-label">Phone number</label>
-                <input type="phone" class="form-control" id="phoneNumber" name="phoneNumber" aria-describedby="mobileNumber">
+                <input type="phone" class="form-control" id="phoneNumber" name="phoneNumber" aria-describedby="mobileNumber" required>
               </div>
                 <div class="mb-3">
                 <label for="issueDescription" class="form-label">Describe your issue please</label>
                 <div class="form-floating">
-                  <textarea class="form-control" name="issue" rows="5" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                  <textarea class="form-control" name="issue" rows="5" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" required></textarea>
                   <label for="floatingTextarea2">Enter your issue</label>
                 </div>
 
@@ -46,7 +46,7 @@
             color: white;
             border-radius: 14px;
             width: fit-content;
-            padding: 60px;
+            padding: 50px;
             margin: 19vh auto;
             ">
 
@@ -54,6 +54,24 @@
             <h1 style="font-size: 80px"> You.</h1>
             <hr>
             <h4>We'll be in touch shortly!</h4>
+            <button class="animation-btn" href="/" style="
+
+            padding: 10px;
+            background-color: white;
+            color: #335eea;
+            border-radius: 10px;
+            border: transparent;
+            margin-top: 20px;
+            position: inherit;
+            justify-content: center;
+            align-items: center;
+            width: 150px;
+            display: flex;
+            font-size: 20px;
+            "
+            >Home <svg id="letsgo" style="margin-left: 10px;width: 30px;height: 30px;position: relative" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+</svg></button>
         </div>
     {% endif %}
 

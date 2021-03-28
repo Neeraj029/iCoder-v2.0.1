@@ -1,10 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
+{% extends 'base.html' %}
 
-</body>
-</html>
+{% block title %}Blog - iCoder{% endblock title %}
+
+{% block body %}
+    <div class="container" style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
+        <div class="card m-3" style="width : 50%!important;">
+          <h5 class="card-header">Featured</h5>
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Continue reading</a>
+          </div>
+        </div>
+        <div class="card m-3" style="width : 50%!important;">
+          <h5 class="card-header">Featured</h5>
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Continue reading</a>
+          </div>
+        </div><div class="card m-3" style="width : 50%!important;">
+          <h5 class="card-header">Featured</h5>
+          <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Continue reading</a>
+          </div>
+        </div>
+    </div>
+
+{% endblock body %}
