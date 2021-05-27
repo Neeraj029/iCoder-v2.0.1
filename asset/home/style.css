@@ -4,7 +4,7 @@
 
 
 .welcome-banner {
-  background-color: #335eea;
+  background-color: red;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -73,6 +73,7 @@
         transition: 0.3s;
         animation-timing-function: ease-in-out;
         animation-fill-mode: both;
+        background-color: red;
     }
 
     @keyframes moveon {
